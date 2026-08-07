@@ -79,8 +79,8 @@ grid-container {
 }
 
 .flip-box-front h1 {
-    font-size: 1.45rem;
-    line-height: 1.35;
+    font-size: 1.18rem;
+    line-height: 1.45;
 }
 
 .flip-box-back {
@@ -105,26 +105,4 @@ grid-container {
 
 .afterImage {
     box-shadow: -10px 0 26px rgba(0, 0, 0, 0.4);
-}
-
-/* Career timeline: on desktop the date + job title sit on the dark teal band,
-   so force them to light, high-contrast colors (mobile keeps them inside the white card) */
-@media only screen and (min-width: 1170px) {
-    .center-orientation .vertical-date > span[data-i18n] {
-        color: #ffffff !important;
-        font-weight: 700;
-    }
-
-    .center-orientation .vertical-date small,
-    .center-orientation .vertical-date small span {
-        color: #9fe6cf !important;
-        font-weight: 600;
-    }
-}
-
-/* Keep the before/after morph images a sensible height on phones */
-@media (max-width: 767px) {
-    .comparisonImage img {
-        height: 32rem;
-    }
 }
