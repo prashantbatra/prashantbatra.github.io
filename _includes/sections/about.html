@@ -42,11 +42,11 @@
 			gsap.utils.toArray(".comparisonSection").forEach(function (section) {
 				buildMorph(section, {
 					trigger: section,
-					start: "center center",
-					end: function () { return "+=60%"; },
+					start: "bottom bottom",
+					end: function () { return "+=50%"; },
 					scrub: true,
 					pin: true,
-					anticipatePin: 1,
+					anticipatePin: 0,
 					invalidateOnRefresh: true
 				});
 			});
