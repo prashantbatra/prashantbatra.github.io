@@ -1,0 +1,9 @@
+{
+  // Format-on-save was corrupting Jekyll files: it collapsed the "---"
+  // front-matter in static/css/custom.scss (so custom.css stopped building)
+  // and injected spaces into {{ "..." }} asset URLs in _includes/head.html.
+  // Keep it off for this repo.
+  "editor.formatOnSave": false,
+  "[scss]": { "editor.formatOnSave": false },
+  "[html]": { "editor.formatOnSave": false }
+}
