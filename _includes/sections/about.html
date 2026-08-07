@@ -35,11 +35,11 @@
 			var tl = gsap.timeline({
 				scrollTrigger: {
 					trigger: section,
-					start: "bottom bottom",
-					end: function () { return "+=50%"; },
+					start: "center center",
+					end: function () { return "+=60%"; },
 					scrub: true,
 					pin: true,
-					anticipatePin: 0,
+					anticipatePin: 1,
 					invalidateOnRefresh: true
 				},
 				defaults: { ease: "none" }
