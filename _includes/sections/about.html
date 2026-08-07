@@ -31,9 +31,16 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 	<script>
 		gsap.registerPlugin(ScrollTrigger);
-		gsap.utils.toArray(".comparisonSection").forEach(function (section) {
-			var tl = gsap.timeline({
-				scrollTrigger: {
+		function buildMorph(section, trigger) {
+			gsap.timeline({ scrollTrigger: trigger, defaults: { ease: "none" } })
+				.fromTo(section.querySelector(".afterImage"), { xPercent: 100, x: 0 }, { xPercent: 0 })
+				.fromTo(section.querySelector(".afterImage img"), { xPercent: -100, x: 0 }, { xPercent: 0 }, 0);
+		}
+		var mm = gsap.matchMedia();
+		// Desktop: pin the section and scrub the reveal.
+		mm.add("(min-width: 768px)", function () {
+			gsap.utils.toArray(".comparisonSection").forEach(function (section) {
+				buildMorph(section, {
 					trigger: section,
 					start: "center center",
 					end: function () { return "+=60%"; },
@@ -41,11 +48,20 @@
 					pin: true,
 					anticipatePin: 1,
 					invalidateOnRefresh: true
-				},
-				defaults: { ease: "none" }
+				});
 			});
-			tl.fromTo(section.querySelector(".afterImage"), { xPercent: 100, x: 0 }, { xPercent: 0 })
-				.fromTo(section.querySelector(".afterImage img"), { xPercent: -100, x: 0 }, { xPercent: 0 }, 0);
+		});
+		// Mobile: no pin (pinning freezes touch scrolling); reveal as the section passes through.
+		mm.add("(max-width: 767px)", function () {
+			gsap.utils.toArray(".comparisonSection").forEach(function (section) {
+				buildMorph(section, {
+					trigger: section,
+					start: "top 80%",
+					end: "bottom 55%",
+					scrub: true,
+					invalidateOnRefresh: true
+				});
+			});
 		});
 		window.addEventListener("load", function () { ScrollTrigger.refresh(); });
 	</script>
