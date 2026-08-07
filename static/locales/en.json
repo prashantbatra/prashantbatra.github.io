@@ -1,8 +1,8 @@
 {
-  "website":{
+  "website": {
     "title": "Batra's Blog"
   },
-  "nav":{
+  "nav": {
     "home": "Home",
     "about_me": "About",
     "skills": "Skills",
@@ -11,43 +11,47 @@
     "blog": "Recommendations",
     "link": "Contact"
   },
-  "about_me":{
+  "about_me": {
     "about_me": "About Me",
     "des1": "Coding always keeps me on the edge of my seat and never fails to blow away the cobwebs.",
     "des2": "After coming off the school with flying colors, I always thought my dream was to be a private tutor. It seemed more appropriate after I topped my school in 12th Standard. To make my dream come true, I started my coaching business but felt humdrum.",
     "des3": "And then, one fine day the craving to do something different sparked the fire off after I created a small game with the help of a C++ tutorial. Trust me, I felt on the top of the world. The passion carried me through my engineering entrance exam which I aced and through my Bachelor of Technology degree in Computer Science which I nailed. Since then I never looked back.",
     "des4": "Thanks to my creativity, problem solving and quickly learning new languages skills, I now have programming languages like C++, Java, Python, Typescript, Javascript, CSS, HTML, C#, Bash, Perl, curl, SQL and frameworks like Qt, Angular, Django, Flask, WebRTC, ASP.Net etc under my belt.",
     "des5": "I still have fervent desire to learn new programming languages and am enthusiastically learning new fameworks and principles. I like applying my experience, learned principles and patterns to multiple projects and thereby, making life of my team mates easier. It is immensely satisfying and brings genuine joy to my heart. To summarize, I am grown into the kind of software that is moldable but still keep its creative flare intact."
-    
   },
-  "skills":{
+  "skills": {
     "my_skills": "My Skills"
   },
-  "career":{
+  "career": {
     "my_career": "My Career",
-    "nextcode": "Nextcode",
-    "nextcode_des": "Now I am in Nextcode and develop website with Python code for genetic analysis.",
-    "nextcode_date": "Apr. 2016",
-    "nextcode_job": "Python Developer",
-    "netease": "Netease Game",
-    "netease_des": "In Netease game, I learned game service system and use Python code for ops.",
-    "netease_date": "Jun. 2015",
-    "netease_job": "Dev Ops",
-    "ucloud": "Ucloud",
-    "ucloud_des": "In ucloud, I started to deal with servers and Linux system and use shell scripts to manage massive server.",
-    "ucloud_date": "Sep. 2013",
-    "ucloud_job": "Dev Ops",
-    "college": "Graduation",
-    "college_des": "At July 2013,I graduated from college and started my IT technology tour.",
-    "college_date": "Jul. 2013",
-    "college_job": "Student"
+    "infindon_pe": "Infineon",
+    "infindon_pe_desc": "Principal Engineer and architect setting technical direction across multiple product teams. I own end-to-end system architecture, raise engineering standards, and mentor senior engineers while staying hands-on with the most critical parts of the codebase.",
+    "infindon_pe_date": "Since 2023 - Present",
+    "infindon_pe_job": "Principal Engineer & Software Architect",
+    "cognitec_systems_gmbh_a": "Cognitec Systems GmbH",
+    "cognitec_systems_gmbh_a_desc": "Led full-stack development of multiple products with reliable, well-documented REST back ends and interactive front ends, delivering face-recognition technology trusted by customers worldwide.",
+    "cognitec_systems_gmbh_a_date": "May 2012 - Feb 2022",
+    "cognitec_systems_gmbh_a_job": "Full-Stack Development Lead & Architect",
+    "tech_mahindra_gmbh_b": "Tech Mahindra GmbH",
+    "tech_mahindra_gmbh_b_desc": "Worked on-site at T-Mobile (Deutsche Telekom) as a Senior Technical Associate, designing and delivering features and automating build and test pipelines.",
+    "tech_mahindra_gmbh_b_date": "Apr 2009 - Apr 2012",
+    "tech_mahindra_gmbh_b_job": "Senior Technical Associate",
+    "appulse_technologies_c": "Appulse Technologies",
+    "appulse_technologies_c_desc": "Senior Software Engineer contributing to video-player products and in-house projects, working closely with the CTO on design and implementation.",
+    "appulse_technologies_c_date": "Sep 2007 - Mar 2009",
+    "appulse_technologies_c_job": "Senior Software Engineer",
+    "mindfire_solutions_d": "Mindfire Solutions",
+    "mindfire_solutions_d_desc": "Software Developer for mobile projects, contributing to white papers and developing in-house optimisation algorithms.",
+    "mindfire_solutions_d_date": "Aug 2005 - Aug 2007",
+    "mindfire_solutions_d_job": "Software Developer"
   },
-  "Blog":{
-    "my_blog": "My Blog"
+  "blog": {
+    "my_blog": "My Blog",
+    "recommended_by": "Recommended By"
   },
-  "link":{
+  "link": {
     "link": "Link",
+    "link2": "Contact",
     "view": "views"
   }
-
 }

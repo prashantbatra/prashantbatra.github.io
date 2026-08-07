@@ -7,37 +7,40 @@
     </div>
     <div class="row features-block">
         <div class="wow zoomIn col-lg-6 col-lg-offset-3">
-            <canvas id="{{ site.data.index.skills.id }}" height="500" width="500"></canvas>
+            <div style="position: relative; width: 100%; max-width: 500px; margin: 0 auto;">
+                <canvas id="{{ site.data.index.skills.id }}"></canvas>
+            </div>
         </div>
         <div class="col-lg-1"></div>
         <script>
-        var ctx = document.getElementById("{{ site.data.index.skills.id }}");
-        var data = {
-            labels: "{{ site.data.index.skills.aspects }}".split(","),
-            datasets: [{
-                label: "{{ site.data.index.skills.label }}",
-                backgroundColor: "rgba(179,181,198,0.2)",
-                borderColor: "#005547",
-                pointBackgroundColor: "#005547",
-                pointBorderColor: "#fff",
-                pointHoverBackgroundColor: "#005547",
-                pointHoverBorderColor: "#005547",
-                data: [{{ site.data.index.skills.percentage }}]
-                }]
+            var ctx = document.getElementById("{{ site.data.index.skills.id }}");
+            var data = {
+                labels: "{{ site.data.index.skills.aspects }}".split(","),
+                datasets: [{
+                    label: "{{ site.data.index.skills.label }}",
+                    backgroundColor: "rgba(179,181,198,0.2)",
+                    borderColor: "#005547",
+                    pointBackgroundColor: "#005547",
+                    pointBorderColor: "#fff",
+                    pointHoverBackgroundColor: "#005547",
+                    pointHoverBorderColor: "#005547",
+                    data: [{{ site.data.index.skills.percentage }}]
+            }]
         };
-        var myRadarChart = new Chart(ctx, {
-            type: 'radar',
-            data: data,
-            options: {
-                scale: {
+            var myRadarChart = new Chart(ctx, {
+                type: 'radar',
+                data: data,
+                options: {
                     responsive: true,
-                    ticks: {min: 0, max: 100, fontColor: "black"},
-                    lineArc: false,
-                    pointLabels: {fontSize: 14 , fontColor: "black"},
-                },
-                legend: {display: false},
-            }
-        });
+                    maintainAspectRatio: true,
+                    scale: {
+                        ticks: { min: 0, max: 100, fontColor: "black" },
+                        lineArc: false,
+                        pointLabels: { fontSize: 14, fontColor: "black" },
+                    },
+                    legend: { display: false },
+                }
+            });
         </script>
     </div>
 </div>

@@ -8,22 +8,25 @@ permalink: /
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
         <!-- <a class="navbar-brand" href="#page-top" id="i18_title"><span data-i18n="website.title">{{ site.title }}</span></a> -->
-        <a href="#page-top"><div class="logo" href="#page-top"> 
-          <!-- <span style="animation: balance 1.5s ease-out 4.8s;transform-origin: bottom left;">B</span>-->
-          <span class="balanceC">B</span>
-          <span style="animation: shrinkjump 1s ease-in-out 4.8s;transform-origin: bottom center;margin-left:-5px;">A</span>
-          <span style="animation: falling 2s ease-out 4.8s;transform-origin: bottom center;margin-left:-5px;">T</span>
-          <span style="animation: rotate 1s ease-out 4.8s;margin-left:-5px;">R</span>
-          <span style="animation: toplong 1.5s linear 4.8s;margin-left:-5px;">A</span>          
-        </div>
-        <div class="line"></div>
+        <a href="#page-top">
+          <div class="logo" href="#page-top">
+            <!-- <span style="animation: balance 1.5s ease-out 4.8s;transform-origin: bottom left;">B</span>-->
+            <span class="balanceC">B</span>
+            <span
+              style="animation: shrinkjump 1s ease-in-out 4.8s;transform-origin: bottom center;margin-left:-5px;">A</span>
+            <span style="animation: falling 2s ease-out 4.8s;transform-origin: bottom center;margin-left:-5px;">T</span>
+            <span style="animation: rotate 1s ease-out 4.8s;margin-left:-5px;">R</span>
+            <span style="animation: toplong 1.5s linear 4.8s;margin-left:-5px;">A</span>
+          </div>
+          <div class="line"></div>
       </div></a>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right" id="i18_navbar">
@@ -34,14 +37,15 @@ permalink: /
             {% else %}
               <a class="page-scroll" href="{{ section.id | prepend: '#'}} ">
             {% endif %}-->
-              <a class="page-scroll" href="{{ section.id | prepend: '#'}} ">
+            <a class="page-scroll" href="{{ section.id | prepend: '#'}} ">
               <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
             </a>
           </li>
           {% endfor %}
           {% for language in site.data.index.language %}
           <li>
-            <a id="set_lang_{{ language.locale }}" class="btn btn-sm set_{{ language.locale }}" data-locale="{{ language.locale }}">
+            <a id="set_lang_{{ language.locale }}" class="btn btn-sm set_{{ language.locale }}"
+              data-locale="{{ language.locale }}">
               <img src="{{ language.flag | prepend: site.baseurl }}" height="16" width="16">
             </a>
           </li>
@@ -57,7 +61,8 @@ permalink: /
 
 {% for section in site.data.landing %}
 {% assign loopindex = forloop.index | modulo: 2 %}
-<section id="{{ section.id }}" class="features {% if loopindex != 1 %} gray-section {% endif %} {{ section.css }}" style="margin-top: 0; background-color: #e8f2ea">
+<section id="{{ section.id }}" class="features {% if loopindex != 1 %} gray-section {% endif %} {{ section.css }}"
+  style="margin-top: 0; background-color: #e8f2ea">
   {% include sections/{{section.tpl}} %}
 </section>
 {% endfor %}
@@ -66,20 +71,6 @@ permalink: /
     <span class="left-arm"></span>
     <span class="right-arm"></span>
     <span class="arrow-slide"></span>
-  </a> 
+  </a>
 </footer>
-<style>
-iframe {
-  -moz-transform: scale(0.25, 0.25);
-  -webkit-transform: scale(0.25, 0.25);
-  -o-transform: scale(0.25, 0.25);
-  -ms-transform: scale(0.25, 0.25);
-  transform: scale(0.25, 0.25);
-  -moz-transform-origin: top left;
-  -webkit-transform-origin: top left;
-  -o-transform-origin: top left;
-  -ms-transform-origin: top left;
-  transform-origin: top left;
-}
-</style>
 <!-- <iframe src="https://www.maimemo.com/share/page/?uid=779139&pid=660" style="display: none;"></iframe> -->

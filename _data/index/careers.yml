@@ -1,6 +1,23 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
+    detail: Infineon
+    i18n: infindon_pe
+  desc:
+    detail: Principal Engineer and architect setting technical direction across multiple product teams.
+    resp: <ul style="font-size:16px"><li><b>Own the technical vision</b><ul style="font-size:16px"><li>Define system architecture and the long-term technical roadmap</li><li>Set engineering standards, review designs and guard non-functional requirements</li></ul></li><li><b>Lead across teams</b><ul style="font-size:16px"><li>Align multiple squads on shared platforms and APIs</li><li>Mentor senior and staff engineers</li></ul></li><li><b>Stay hands-on</b><ul style="font-size:16px"><li>Prototype high-risk components and contribute to critical code paths</li><li>Drive observability, performance and reliability improvements</li></ul></li></ul>
+    technologies: C++, Python, TypeScript, Angular, Docker, Kubernetes, PostgreSQL, REST, gRPC, CI/CD, AWS
+    i18n: infindon_pe_desc
+  date:
+    detail: Since 2023 - Present
+    i18n: infindon_pe_date
+  job:
+    detail: Principal Engineer & Software Architect
+    i18n: infindon_pe_job
+  icon: fa-plus-square
+  present: true
+
+- name:
     detail: Cognitec Systems GmbH
     i18n: cognitec_systems_gmbh_a
   desc:
@@ -9,20 +26,18 @@
     technologies: C++, WebRTC, Python, SWIG, Docker, Django REST, Apache, Postgres, Oracle, SQL, Sqlite, Git, JIRA, Android app, Angular (HTML5, TypeScript, CSS, Node, NPM)
     i18n: cognitec_systems_gmbh_a_desc
   date:
-    detail: May 2012 - Present
+    detail: May 2012 - Feb 2022
     i18n: cognitec_systems_gmbh_a_date
   job:
     detail: Full-Stack Development Lead & Architect
     i18n: cognitec_systems_gmbh_a_job
   icon: fa-plus-square
-  present: true
-
 - name:
     detail: Tech Mahindra GmbH
     i18n: tech_mahindra_gmbh_b
   desc:
     detail: Worked full time onsite at T-Mobile (Deutsche Telekom) as Senior Technical Associate
-    resp: <ul style="font-size:16px"><li><b>Design & Development</b><ul style="font-size:16px"><li>Create designs based on the feature request documents</li><li>Present the proposed solution for approval</li><li>Develop the feature</li></ul></li><li><b>Production release</b><ul style="font-size:16px"><li>Contributed to quarterly production release activities</li></ul></li><li><b>Automation</b><ul style="font-size:16px"><li>Developed automated Test Suite for testing team</li><li>Developed automated build process for build team</li></ul></li><li><b>Maintainance</b><ul style="font-size:16px"><li>Fix issues within defined SLAs.</li></ul></li></ul>
+    resp: <ul style="font-size:16px"><li><b>Design & Development</b><ul style="font-size:16px"><li>Create designs based on the feature request documents</li><li>Present the proposed solution for approval</li><li>Develop the feature</li></ul></li><li><b>Production release</b><ul style="font-size:16px"><li>Contributed to quarterly production release activities</li></ul></li><li><b>Automation</b><ul style="font-size:16px"><li>Developed automated Test Suite for testing team</li><li>Developed automated build process for build team</li></ul></li><li><b>Maintenance</b><ul style="font-size:16px"><li>Fix issues within defined SLAs.</li></ul></li></ul>
     technologies: C++, Clearcase, Perl, Java
     i18n: tech_mahindra_gmbh_b_desc
   date:
@@ -37,15 +52,15 @@
     detail: Appulse  Technologies 
     i18n: appulse_technologies_c
   desc:
-    detail: Worked as Senior Software Enginner and contributed to the development of Video players & in-house projects
-    resp: <ul style="font-size:16px"><li><b>Devepment</b><ul style="font-size:16px"><li>Discuss the features with team lead</li><li>Develop the feature</li><li>Perform Unit tests</li></ul></li><li><b>Lead in-house projects</b><ul style="font-size:16px"><li>Worked closely with CTO of the company</li><li>Proposed designs</li><li>Implemented the mutually agreed solutions</li></ul></li><li><b>Hiring process</b><ul style="font-size:16px"><li>Contributed to the hiring process</li><li>Conducted many technical interviews</li></ul></li></ul>
+    detail: Worked as Senior Software Engineer and contributed to the development of Video players & in-house projects
+    resp: <ul style="font-size:16px"><li><b>Development</b><ul style="font-size:16px"><li>Discuss the features with team lead</li><li>Develop the feature</li><li>Perform Unit tests</li></ul></li><li><b>Lead in-house projects</b><ul style="font-size:16px"><li>Worked closely with CTO of the company</li><li>Proposed designs</li><li>Implemented the mutually agreed solutions</li></ul></li><li><b>Hiring process</b><ul style="font-size:16px"><li>Contributed to the hiring process</li><li>Conducted many technical interviews</li></ul></li></ul>
     technologies: C++, Java
     i18n: appulse_technologies_c_desc
   date:
-    detail: September 2007 - April 2009
+    detail: September 2007 - March 2009
     i18n: appulse_technologies_c_date
   job:
-    detail: Senior Software Enginner
+    detail: Senior Software Engineer
     i18n: appulse_technologies_c_job
   icon: fa-plus-square
   
@@ -58,7 +73,7 @@
     technologies: C++, Java
     i18n: mindfire_solutions_d_desc
   date:
-    detail: September 2007 - April 2009
+    detail: August 2005 - August 2007
     i18n: mindfire_solutions_d_date
   job:
     detail: Software Developer
