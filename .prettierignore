@@ -1,0 +1,14 @@
+# Jekyll/Liquid files that Prettier corrupts.
+# It collapses the "---" front-matter fences (which stops Jekyll from
+# compiling custom.scss -> custom.css) and injects spaces inside
+# {{ "..." }} asset URLs (which breaks CSS/JS loading). Keep these out.
+static/css/custom.scss
+_sass/
+_includes/
+_layouts/
+index.html
+404.html
+feed.xml
+sitemap.xml
+search.json
+blog/
