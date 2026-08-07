@@ -16,21 +16,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Respect users who prefer reduced motion */
-@media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.001ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.001ms !important;
-    }
-}
-
 /* Recommendation card "READ MORE" link (replaces the old dead buttons) */
 .rec-btn {
     display: inline-block;
@@ -54,16 +39,6 @@ html {
         box-shadow: 0 6px 16px rgba(0, 85, 71, 0.25);
         text-decoration: none;
     }
-}
-
-/* Consistent breathing room between the main landing sections */
-#about,
-#skill,
-#career,
-#blog,
-#link {
-    padding-top: 40px;
-    padding-bottom: 40px;
 }
 
 /* Subtle lift on the contact social icons */

@@ -31,32 +31,22 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 	<script>
 		gsap.registerPlugin(ScrollTrigger);
-		// Pinning is janky on touch/small screens, so only enable it on larger pointer-fine devices.
-		var enablePin = window.matchMedia("(min-width: 768px) and (pointer: fine)").matches;
 		gsap.utils.toArray(".comparisonSection").forEach(function (section) {
-			var afterImage = section.querySelector(".afterImage");
-			var afterImg = afterImage.querySelector("img");
-			if (enablePin) {
-				var tl = gsap.timeline({
-					scrollTrigger: {
-						trigger: section,
-						start: "center center",
-						end: function () { return "+=50%"; },
-						scrub: true,
-						pin: true,
-						anticipatePin: 1,
-						invalidateOnRefresh: true
-					},
-					defaults: { ease: "none" }
-				});
-				tl.fromTo(afterImage, { xPercent: 100, x: 0 }, { xPercent: 0 })
-					.fromTo(afterImg, { xPercent: -100, x: 0 }, { xPercent: 0 }, 0);
-			} else {
-				gsap.set(afterImage, { xPercent: 0 });
-				gsap.set(afterImg, { xPercent: 0 });
-			}
+			var tl = gsap.timeline({
+				scrollTrigger: {
+					trigger: section,
+					start: "bottom bottom",
+					end: function () { return "+=50%"; },
+					scrub: true,
+					pin: true,
+					anticipatePin: 0,
+					invalidateOnRefresh: true
+				},
+				defaults: { ease: "none" }
+			});
+			tl.fromTo(section.querySelector(".afterImage"), { xPercent: 100, x: 0 }, { xPercent: 0 })
+				.fromTo(section.querySelector(".afterImage img"), { xPercent: -100, x: 0 }, { xPercent: 0 }, 0);
 		});
-		// Recalculate trigger positions once images have loaded to avoid the scroll jump.
 		window.addEventListener("load", function () { ScrollTrigger.refresh(); });
 	</script>
 </div>
